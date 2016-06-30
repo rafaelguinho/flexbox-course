@@ -6,10 +6,6 @@
     <meta charset="UTF-8">
 
     <style>
-        .flex-inline {
-            display: inline-flex;
-        }
-        
         .flex {
             display: flex;
         }
@@ -25,9 +21,22 @@
             background-color: lightcoral;
             color: white;
             border: 1.5px solid darkslateblue;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            width: 15%;
             font-weight: bold;
             font-family: sans-serif;
+        }
+        
+        .nowrap {
+            flex-wrap: nowrap
+        }
+        
+        .wrap {
+            flex-wrap: wrap;
+        }
+        
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
         }
     </style>
 
@@ -35,13 +44,11 @@
 
 <body>
 
-    <h1>Flex property</h1>
+    <h1>Flex-wrap</h1>
 
-    <h3>Display: flex</h2>
+    <h3>nowrap</h2>
 
-        <p>display: flex creates a block-level flex container</p>
-
-        <div class="container flex">
+        <div class="container flex nowrap">
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
@@ -51,9 +58,9 @@
             <div class="item">7</div>
         </div>
 
-        <h3>Display: inline-flex</h2>
-            <p>display: inline-flex creates an inline-level flex container.</p>
-            <div class="container flex-inline">
+        <h3>wrap</h2>
+
+            <div class="container flex wrap">
                 <div class="item">1</div>
                 <div class="item">2</div>
                 <div class="item">3</div>
@@ -63,15 +70,18 @@
                 <div class="item">7</div>
             </div>
 
-            <div class="container flex-inline">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
-                <div class="item">4</div>
-                <div class="item">5</div>
-                <div class="item">6</div>
-                <div class="item">7</div>
-            </div>
+            <h3>wrap-reverse</h2>
+
+                <div class="container flex wrap-reverse">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                    <div class="item">6</div>
+                    <div class="item">7</div>
+                </div>
+
 
 </body>
 
