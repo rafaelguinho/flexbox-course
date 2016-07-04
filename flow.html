@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+
+    <style>
+        .container{
+            height: 300px
+        }
+        .flex {
+            display: flex;
+        }
+        
+        .container {
+            border: 1.5px dashed red;
+            margin-bottom: 1em
+        }
+        
+        .item {
+            text-align: center;
+            padding: 1em;
+            background-color: lightcoral;
+            color: white;
+            border: 1.5px solid darkslateblue;
+            font-size: 1.3em;
+            width: 15%;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        
+        .column-wrap {
+            flex-flow: column wrap
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Flex-flow</h1>
+
+    <h3>column wrap</h2>
+
+        <div class="container flex column-wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+
+
+
+</body>
+
+</html>

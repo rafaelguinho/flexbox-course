@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+
+    <style>
+        .flex {
+            display: flex;
+        }
+        
+        .container {
+            border: 1.5px dashed red;
+            margin-bottom: 1em;
+            height: 200px;
+            
+            /*align-items: flex-end; */
+
+            /*align-items: flex-start; */
+            /*align-items: center;*/
+        /*align-items: baseline;*/
+            /*align-items: stretch;*/
+        }
+        
+        .item {
+            text-align: center;
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+            background-color: lightcoral;
+            color: white;
+            border: 1.5px solid darkslateblue;
+            font-weight: bold;
+            font-family: sans-serif;
+            
+        }
+        
+        .row {
+            flex-direction: row;
+        }
+
+        .bigger{
+            font-size: 1.6em;
+        }
+        .small{
+            font-size: 1.1em;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Flex-direction</h1>
+
+
+        <div class="container flex row">
+            <div class="item bigger">1</div>
+            <div class="item small">2</div>
+            <div class="item small">3</div>
+            <div class="item bigger">4</div>
+            <div class="item small">5</div>
+            <div class="item bigger">6</div>
+            <div class="item bigger">7</div>
+        </div>
+
+
+</body>
+
+</html>
