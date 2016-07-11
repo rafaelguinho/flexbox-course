@@ -1,0 +1,22 @@
+{
+  "name": "flexbox-course",
+  "version": "1.0.0",
+  "description": "Code used, for me, to train new programmers about FlexBox.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelguinho/flexbox-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelguinho/flexbox-course/issues"
+  },
+  "homepage": "https://github.com/rafaelguinho/flexbox-course#readme",
+  "dependencies": {
+    "marvel-comics-api": "^1.3.0"
+  }
+}
