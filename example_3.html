@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+
+    <style>
+body {
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header,
+footer {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+section,
+aside {
+  background-color: #594255;
+  color: #eee;
+  padding: 3em 1.5em;
+  margin: 1% 0;
+}
+
+section {
+  flex: 2 1 500px;
+  margin-right: 1%;
+}
+
+aside {
+  flex: 1 2 250px;
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+
+    flex-direction: column;
+  }
+  section {
+    margin-right: 0;
+    -webkit-flex-basis: auto;
+    -moz-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- header stuff -->
+    </header>
+    <div class="container">
+        <section class="main"></section>
+        <aside class="sidebar"></aside>
+    </div>
+    <footer>
+        <!-- footer stuff -->
+    </footer>
+</body>
+
+</html>
