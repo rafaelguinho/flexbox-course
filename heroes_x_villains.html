@@ -14,25 +14,32 @@
         .container {
             height: 100vh;
             background-color: #663399;
-            align-content: flex-start;
-            justify-content:center
-         
+            /*align-content: flex-start;
+            justify-content: center*/
         }
         
         .flex {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            
         }
         
         .item {
             margin: 0.5em 0.5em;
             height: 130px;
             box-shadow: 2px 2px 3px black
+        }
+
+        .item2{
+            height: 100px;
+            border: 1px solid white;
+            width: 100%;
             
         }
 
+        #banner{
+            height: 250px;
+        }
+        
     </style>
 
 </head>
@@ -41,6 +48,14 @@
 
 
     <div class="container flex">
+        <div class="item2">
+
+        </div>
+        <div class="item2" id="banner">
+
+        </div>
+
+
         <!--<div class="item" id="first"><img src="img/1.jpg" alt=""></div>
         <div class="item" id="second"><img src="img/2.jpg" alt=""></div>
         <div class="item" id="thirty"><img src="img/3.jpg" alt=""></div>
