@@ -6,9 +6,6 @@
     <meta charset="UTF-8">
 
     <style>
-        .container{
-            height: 300px
-        }
         .flex {
             display: flex;
         }
@@ -30,29 +27,28 @@
             font-family: sans-serif;
         }
         
-        .column-wrap {
-            flex-flow: column wrap
+        .wrap {
+            flex-wrap: wrap;
+            /*flex-wrap: nowrap;*/
+            /*flex-wrap: wrap-reverse;*/
         }
-        
     </style>
 
 </head>
 
 <body>
 
-    <h1>Flex-flow</h1>
+    <h1>Flex-wrap</h1>
 
-        <div class="container flex column-wrap">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
-            <div class="item">7</div>
-        </div>
-
-
+    <div class="container flex wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
 
 </body>
 

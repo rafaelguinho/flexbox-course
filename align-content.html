@@ -12,21 +12,23 @@
         
         .container {
             border: 1.5px dashed red;
-            margin-bottom: 1em;
-            height: 200px;
-            
-            /*align-items: flex-end; */
+            height: 500px;
+            flex-wrap: wrap;
 
-            /*align-items: flex-start; */
-            /*align-items: center;*/
-        /*align-items: baseline;*/
-            /*align-items: stretch;*/
+            align-content: flex-start; 
+            /*align-content:flex-end;*/
+            /*align-content:center;*/
+            /*align-content:space-between;*/
+            /*align-content:space-around; */
+            /*align-content:stretch;*/
+            
+
         }
         
         .item {
             text-align: center;
-            height: 60px;
-            width: 60px;
+            
+            width: 360px;
             text-align: center;
             line-height: 60px;
             background-color: lightcoral;
@@ -54,7 +56,7 @@
 
 <body>
 
-    <h1>Flex-direction</h1>
+    <h1>Align-content</h1>
 
 
         <div class="container flex row">

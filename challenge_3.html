@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: coral;
+            padding: 10px
+        }
+        
+        nav > ul {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center
+        }
+        
+        .form-search {
+            display: flex;
+            align-items: center
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+
+        <div class="brand">
+            <img src="img/brand.png" alt="brand">
+            <span>Brand</span>
+        </div>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+        <form class="form-search">
+            <input type="search" name="" value=""><button type="submit">Search</button>
+        </form>
+    </nav>
+
+</body>
+
+</html>
