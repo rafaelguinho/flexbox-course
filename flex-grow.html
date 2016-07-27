@@ -14,11 +14,12 @@
         .flex {
             display: flex;
             align-items: center;
-            justify-content: center
+            justify-content: flex-start;
         }
         
         .item {
             text-align: center;
+            flex-grow: 1;
             padding: 1em;
             background-color: lightcoral;
             color: white;
@@ -29,15 +30,15 @@
         }
 
         #thirty{
-            flex-grow: 1
+            flex-grow: 10
         }
     </style>
 
 </head>
 
 <body>
-
-    <h1>Order</h1>
+    
+    <h1>Flex-grow</h1>
 
         <div class="container flex">
             <div class="item" id="first">1</div>

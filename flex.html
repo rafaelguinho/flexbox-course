@@ -6,8 +6,13 @@
     <meta charset="UTF-8">
 
     <style>
+        .flex-inline {
+            display: inline-flex;
+        }
+        
         .flex {
             display: flex;
+            flex-wrap: wrap
         }
         
         .container {
@@ -17,32 +22,36 @@
         
         .item {
             text-align: center;
-            padding: 1em;
             background-color: lightcoral;
             color: white;
             border: 1.5px solid darkslateblue;
             font-size: 1.2em;
+            box-sizing: border-box;
             font-weight: bold;
             font-family: sans-serif;
-        }
+            
+            /*flex-grow flex-shrink flex-basis*/
+            flex: 0 1 auto;
+
+            /*0 0 auto*/
+            flex: none;
+
+            /* flex-grow: 2*/
+            flex: 2; 
+
         
-        .direction {
-            /*flex-direction: row;*/
-            /*flex-direction: row-reverse;*/
-            flex-direction: column;
-            /*flex-direction: column-reverse;*/
         }
-        
     </style>
 
 </head>
 
 <body>
 
-    <h1>Flex-direction</h1>
+    <h1>Flex basis</h1>
 
 
-        <div class="container flex direction">
+
+        <div class="container flex">
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
@@ -52,7 +61,7 @@
             <div class="item">7</div>
         </div>
 
-     
+
 </body>
 
 </html>
